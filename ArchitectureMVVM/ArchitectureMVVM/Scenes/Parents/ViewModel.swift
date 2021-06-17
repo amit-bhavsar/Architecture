@@ -41,6 +41,8 @@ protocol StateFul
     var state: ViewState { get set }
 }
 
+typealias MVVM = ViewModel & StateFul & Navigable & API
+
 /*
 final class TestViewModel : ViewModel, StateFul, Navigable, API
 {
