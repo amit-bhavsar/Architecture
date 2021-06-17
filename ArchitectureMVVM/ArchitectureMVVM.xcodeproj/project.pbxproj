@@ -40,6 +40,7 @@
 		EA14CCC3267B4C0C004C39C0 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14CCC2267B4C0C004C39C0 /* MovieListViewModel.swift */; };
 		EA14CCC6267B4DBD004C39C0 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14CCC5267B4DBD004C39C0 /* MovieListView.swift */; };
 		EA14CCC9267B4E77004C39C0 /* MovieRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14CCC8267B4E77004C39C0 /* MovieRowView.swift */; };
+		EA14CCCD267B71FE004C39C0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14CCCC267B71FE004C39C0 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		EA14CCC2267B4C0C004C39C0 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		EA14CCC5267B4DBD004C39C0 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		EA14CCC8267B4E77004C39C0 /* MovieRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowView.swift; sourceTree = "<group>"; };
+		EA14CCCC267B71FE004C39C0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				EA14CC8B267B41A7004C39C0 /* HUD.swift */,
+				EA14CCCC267B71FE004C39C0 /* ActivityIndicator.swift */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				EA14CCAB267B4253004C39C0 /* ABResponse.swift in Sources */,
 				EA14CCC9267B4E77004C39C0 /* MovieRowView.swift in Sources */,
 				EA14CC9A267B41CC004C39C0 /* ViewModel.swift in Sources */,
+				EA14CCCD267B71FE004C39C0 /* ActivityIndicator.swift in Sources */,
 				EA14CCAF267B4253004C39C0 /* Webservice.swift in Sources */,
 				EA14CC8E267B41A7004C39C0 /* KeyboardObservingView.swift in Sources */,
 			);

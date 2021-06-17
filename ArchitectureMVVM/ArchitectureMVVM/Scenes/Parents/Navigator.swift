@@ -24,6 +24,9 @@ protocol Navigator
 }
 
 
+
+
+
 extension View
 {
     func navigate<V>(_ view: V) -> some View where V : View {

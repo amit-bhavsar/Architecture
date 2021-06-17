@@ -10,12 +10,12 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class MovieListViewModel: ViewModel
+final class MovieListViewModel: ViewModel, API, Navigable, StateFul
 {
     var navigator: MovieListNavigator
     var interactor: MovieListInteractor
     
-    @Published var state: ViewModelState = .none
+    @Published var state: ViewState = .none
     @Published var movies: [Movie] = []
     
     @Published var pushNextView = false

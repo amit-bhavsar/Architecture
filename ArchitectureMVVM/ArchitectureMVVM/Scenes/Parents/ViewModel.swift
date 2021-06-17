@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ViewModelState {
+enum ViewState {
     case none
     case loading
     case failure(Error)
@@ -17,23 +17,47 @@ enum ViewModelState {
 
 protocol ViewModel: ObservableObject
 {
+    init()
+}
+
+protocol Navigable
+{
     associatedtype Navigator
     associatedtype Destination
     var navigator: Navigator { get set }
-    init()
     func onNext(destination: Destination)
 }
 
-/*
-final class TestViewModel : ViewModel
+protocol API
 {
+    associatedtype Interactor
+    var interactor: Interactor { get set }
+    func callAPI()
+}
+
+protocol StateFul
+{
+    associatedtype ViewState
+    var state: ViewState { get set }
+}
+
+/*
+final class TestViewModel : ViewModel, StateFul, Navigable, API
+{
+    @Published var state: ViewState = .none
+    var navigator: MovieListNavigator
+    var interactor: MovieListInteractor
+    
     init() {
-        navigator = LandingNavigator()
+        navigator = MovieListNavigator()
+        interactor = MovieListInteractor()
     }
     
-    var navigator: LandingNavigator
+    func onNext(destination: MovieListNavigator.Destination) {
+        
+    }
     
-    func onNext(destination: LandingNavigator.Destination) {
+    func callAPI() {
         
     }
 }

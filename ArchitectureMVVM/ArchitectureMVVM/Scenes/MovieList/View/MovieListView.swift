@@ -25,11 +25,13 @@ struct MovieListView: View {
             
             .navigationBarTitle("Movies")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Button("Load") {
+                    viewModel.callAPI()
+                }
+            }
             //.navigationBarHidden(true)
-        }
-        .onAppear {
-            viewModel.callAPI()
-        }
+        }.indicator(state: $viewModel.state)
     }
 }
 
