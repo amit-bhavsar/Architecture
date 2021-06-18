@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct MovieListView: View {
-    
+struct MovieListView: View, Adapter {
     @ObservedObject var viewModel: MovieListViewModel
     
     init() {
@@ -20,7 +19,7 @@ struct MovieListView: View {
         NavigationView {
             List(viewModel.movies) { movie in
                 MovieRowView(movie: movie)
-                    .navigate(MovieListNavigator.Destination.contentView(movie.title))
+                    .navigate(MovieListNavigator.Destination.movieDetailView(movie))
             }
             
             .navigationBarTitle("Movies")

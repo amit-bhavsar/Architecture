@@ -12,16 +12,15 @@ final class MovieListNavigator : Navigator {
     
     enum Destination: DestinationProtocol
     {
-        case contentView(String)
+        case movieDetailView(Movie)
         
         var view: some View
         {
             switch self {
-            case .contentView(let string):
-                ContentView(string: string)
+            case .movieDetailView(let movie):
+                MovieDetailView(movie: movie)
             }
         }
-        
     }
     
     @ViewBuilder

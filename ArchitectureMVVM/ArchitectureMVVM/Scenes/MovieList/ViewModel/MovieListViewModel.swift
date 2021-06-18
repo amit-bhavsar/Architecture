@@ -10,7 +10,7 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class MovieListViewModel: ViewModel, API, Navigable, StateFul
+final class MovieListViewModel: ViewModelProtocol, API, Navigable, StateFul
 {
     var navigator: MovieListNavigator
     var interactor: MovieListInteractor

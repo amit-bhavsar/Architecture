@@ -23,10 +23,6 @@ protocol Navigator
     func bind(_ destination : DestinationType, with trigger: Binding<Bool>, isPresent: Bool) -> Self.Body
 }
 
-
-
-
-
 extension View
 {
     func navigate<V>(_ view: V) -> some View where V : View {
@@ -41,7 +37,6 @@ extension View
             self
         }
     }
-    
     
     func present<V>(_ view: V, with trigger: Binding<Bool>) -> some View where V : View {
         self.fullScreenCover(isPresented: trigger) {
