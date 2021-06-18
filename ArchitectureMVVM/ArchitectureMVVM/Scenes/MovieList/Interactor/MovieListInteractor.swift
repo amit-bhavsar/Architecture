@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Adapter
 
 final class MovieListInteractor: Interactor {
     func getMovies(completion: @escaping (Resultable<[Movie]>) -> Void) {

@@ -2,8 +2,17 @@
   "object": {
     "pins": [
       {
+        "package": "Adapter",
+        "repositoryURL": "https://github.com/amit-bhavsar/Adapter",
+        "state": {
+          "branch": "master",
+          "revision": "67c3c82c27f239a5e3428512a3f1ffce06535398",
+          "version": null
+        }
+      },
+      {
         "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
           "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",

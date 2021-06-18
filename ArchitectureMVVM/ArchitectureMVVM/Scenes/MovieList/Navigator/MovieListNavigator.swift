@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Adapter
 
 final class MovieListNavigator : Navigator {
     
@@ -27,7 +28,7 @@ final class MovieListNavigator : Navigator {
     func bind(_ destination: Destination, with trigger: Binding<Bool>, isPresent: Bool = false) -> some View {
         if isPresent
         {
-            EmptyView().fullScreenCover(isPresented: trigger) {
+            EmptyView().sheet(isPresented: trigger) {
                 destination.view
             }
         }

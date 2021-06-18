@@ -9,6 +9,7 @@ import UIKit
 import Foundation
 import Combine
 import SwiftUI
+import Adapter
 
 final class MovieListViewModel: ViewModelProtocol, API, Navigable, StateFul
 {

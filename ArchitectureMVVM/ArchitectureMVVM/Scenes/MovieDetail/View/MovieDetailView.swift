@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Adapter
 
 struct MovieDetailView: View, Adapter {
     

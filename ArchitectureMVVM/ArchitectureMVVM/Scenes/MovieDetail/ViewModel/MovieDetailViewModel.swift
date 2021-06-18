@@ -5,10 +5,8 @@
 //  Created by PCQ233 on 18/06/21.
 //
 
-import UIKit
 import Foundation
-import Combine
-import SwiftUI
+import Adapter
 
 final class MovieDetailViewModel: ViewModelProtocol {
     let movie: Movie

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Adapter
 
 struct MovieListView: View, Adapter {
     @ObservedObject var viewModel: MovieListViewModel
@@ -23,12 +24,10 @@ struct MovieListView: View, Adapter {
             }
             
             .navigationBarTitle("Movies")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                Button("Load") {
-                    viewModel.callAPI()
-                }
-            }
+            .navigationBarItems(leading:
+                                    Button("Load") {
+                                        viewModel.callAPI()
+                                    }.foregroundColor(.green))
             //.navigationBarHidden(true)
         }.indicator(state: $viewModel.state)
     }
