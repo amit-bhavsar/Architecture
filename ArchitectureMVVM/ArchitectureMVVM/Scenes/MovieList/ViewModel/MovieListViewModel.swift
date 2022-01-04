@@ -43,5 +43,25 @@ final class MovieListViewModel: ViewModelProtocol, API, Navigable, StateFul
                 self.movies = data
             }
         }
+        
+        
+        
+    }
+    
+    
+    func getMovies() {
+        Task {
+            print("Task start")
+            let result = await interactor.getMoviesAwait()
+            switch result {
+            case .failure(let error):
+                print("Request failed due to: \(error)")
+                self.state = .failure(error)
+            case .success(let data):
+                print("Request finished. \(data)")
+                self.state = .success
+                self.movies = data
+            }
+        }
     }
 }

@@ -26,7 +26,7 @@ struct MovieListView: View, Adapter {
             .navigationBarTitle("Movies")
             .navigationBarItems(leading:
                                     Button("Load") {
-                                        viewModel.callAPI()
+                                        viewModel.getMovies()
                                     }.foregroundColor(.green))
             //.navigationBarHidden(true)
         }.indicator(state: $viewModel.state)

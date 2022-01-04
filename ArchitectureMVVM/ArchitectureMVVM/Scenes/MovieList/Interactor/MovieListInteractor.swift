@@ -14,4 +14,9 @@ final class MovieListInteractor: Interactor {
             completion(result)
         }
     }
+    
+    
+    func getMoviesAwait() async -> Resultable<[Movie]> {
+        return await self.callAwait(api: .movies, type: [Movie].self)
+    }
 }

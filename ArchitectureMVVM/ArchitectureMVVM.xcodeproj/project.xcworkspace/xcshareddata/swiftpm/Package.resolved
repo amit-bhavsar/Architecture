@@ -5,8 +5,8 @@
         "package": "Adapter",
         "repositoryURL": "https://github.com/amit-bhavsar/Adapter",
         "state": {
-          "branch": "master",
-          "revision": "67c3c82c27f239a5e3428512a3f1ffce06535398",
+          "branch": "Concurrency",
+          "revision": "61073a17366ca8621137ee68c1e6169cc48d748b",
           "version": null
         }
       },
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
-          "version": "5.4.3"
+          "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
+          "version": "5.5.0"
         }
       },
       {

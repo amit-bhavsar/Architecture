@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22E912862784413300F33369 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E912852784413300F33369 /* Interactor.swift */; };
+		22E91288278441EC00F33369 /* ABResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E91287278441EC00F33369 /* ABResponse.swift */; };
+		22E9128A278443BD00F33369 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E91289278443BD00F33369 /* Router.swift */; };
 		EA14CC60267B4051004C39C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14CC5F267B4051004C39C0 /* AppDelegate.swift */; };
 		EA14CC62267B4051004C39C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14CC61267B4051004C39C0 /* SceneDelegate.swift */; };
 		EA14CC64267B4051004C39C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14CC63267B4051004C39C0 /* ContentView.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22E912852784413300F33369 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		22E91287278441EC00F33369 /* ABResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABResponse.swift; sourceTree = "<group>"; };
+		22E91289278443BD00F33369 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EA14CC5C267B4051004C39C0 /* ArchitectureMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA14CC5F267B4051004C39C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA14CC61267B4051004C39C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +194,9 @@
 		EA14CC9E267B41F8004C39C0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				22E91287278441EC00F33369 /* ABResponse.swift */,
+				22E91289278443BD00F33369 /* Router.swift */,
+				22E912852784413300F33369 /* Interactor.swift */,
 				EA14CC9F267B420A004C39C0 /* Utill.swift */,
 			);
 			path = Common;
@@ -383,11 +392,14 @@
 				EA167900267C73B400C218D3 /* MovieDetailViewModel.swift in Sources */,
 				EA14CCC3267B4C0C004C39C0 /* MovieListViewModel.swift in Sources */,
 				EA14CC60267B4051004C39C0 /* AppDelegate.swift in Sources */,
+				22E912862784413300F33369 /* Interactor.swift in Sources */,
 				EAC6D760267C9D2300043E3A /* ActivityIndicator.swift in Sources */,
 				EAC6D761267C9D2300043E3A /* ABTextField.swift in Sources */,
 				EA14CC91267B41A7004C39C0 /* HiddenWhenKeyboardVisibleView.swift in Sources */,
 				EA14CC93267B41A7004C39C0 /* HUD.swift in Sources */,
 				EA14CCC6267B4DBD004C39C0 /* MovieListView.swift in Sources */,
+				22E9128A278443BD00F33369 /* Router.swift in Sources */,
+				22E91288278441EC00F33369 /* ABResponse.swift in Sources */,
 				EAC6D762267C9D2300043E3A /* MovieRowView.swift in Sources */,
 				EA14CCB9267B4901004C39C0 /* MovieListInteractor.swift in Sources */,
 				EA14CC62267B4051004C39C0 /* SceneDelegate.swift in Sources */,
@@ -538,17 +550,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureMVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SCN5B25A8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArchitectureMVVM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ArchitectureMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,17 +574,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureMVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SCN5B25A8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArchitectureMVVM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ArchitectureMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -611,7 +629,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/amit-bhavsar/Adapter";
 			requirement = {
-				branch = master;
+				branch = Concurrency;
 				kind = branch;
 			};
 		};
